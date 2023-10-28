@@ -1,6 +1,6 @@
 ((a, b) =>
 	(0) -> i |> (
 		() => (i, 10) |> <,              -- conditional branch
-		() => (i, 1) |> + ->> i |> show  -- mutate i
+		() => (i, 1) |> + ->> i | j |> show  -- mutate i
 	) |> loop
 ) -> show10
